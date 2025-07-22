@@ -1,0 +1,24 @@
+{
+  "name": "typescript-ast-server",
+  "version": "1.0.0",
+  "description": "MCP server for TypeScript AST analysis",
+  "main": "typescript-ast-server.ts",
+  "scripts": {
+    "start": "npx tsx typescript-ast-server.ts",
+    "dev": "npx tsx --watch typescript-ast-server.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.16.0",
+    "typescript": "^5.8.3",
+    "winston": "^3.17.0",
+    "zod": "^4.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.20.3"
+  },
+  "type": "module",
+  "volta": {
+    "node": "20.19.4"
+  }
+}
