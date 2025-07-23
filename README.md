@@ -31,11 +31,12 @@ Add the server configuration to your `~/.claude/config.json`:
 ```json
 {
   "mcpServers": {
-    "typescript-ast-server": {
+   "typescript-ast": {
       "command": "npx",
-      "args": ["tsx", "typescript-ast-server.ts"],
-      "env": {}
-    }
+      "args": [
+         "typescript-ast-server"
+      ]
+   },
   }
 }
 ```
