@@ -1,12 +1,16 @@
 {
   "name": "typescript-ast-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server for TypeScript AST analysis",
   "main": "dist/typescript-ast-server.js",
+  "bin": {
+    "typescript-ast-server": "dist/typescript-ast-server.js"
+  },
   "scripts": {
-    "start": "npx tsx typescript-ast-server.ts",
+    "start": "node dist/typescript-ast-server.js",
     "dev": "npx tsx --watch typescript-ast-server.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.16.0",
